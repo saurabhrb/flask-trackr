@@ -5,7 +5,7 @@ from app import app, db
 from flask import Blueprint, flash, redirect, render_template, request, \
                     session, url_for
 from app.views import login_required, flash_errors
-from forms import AddTask
+from app.tasks.forms import AddTask
 from app.models import FTasks
 
 mod = Blueprint('tasks',__name__, url_prefix='/tasks',template_folder='templates',

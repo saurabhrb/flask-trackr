@@ -5,7 +5,7 @@ from app import db
 from flask import Blueprint, flash, redirect, render_template, request, \
                     session, url_for
 from app.views import login_required, flash_errors
-from forms import  RegisterForm, LoginForm
+from app.users.forms import  RegisterForm, LoginForm
 from app.models import User
 from sqlalchemy.exc import IntegrityError
 
